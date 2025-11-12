@@ -128,7 +128,7 @@ export default function CalendarPage() {
       <div className="calendar-top">
         <div className="brand">
           <div className="logo" />
-          <div style={{ color: '#bfe3a9', fontWeight: 800 }}>Starcast</div>
+          <div style={{ color: '#bfe3a9', fontWeight: 800 }}>caltest</div>
         </div>
 
         <div style={{ textAlign: 'center' }}>
