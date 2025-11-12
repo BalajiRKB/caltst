@@ -1,0 +1,43 @@
+// React Big Calendar SASS import + lightweight overrides
+@import 'react-big-calendar/lib/sass/styles';
+// Uncomment if using drag & drop
+// @import 'react-big-calendar/lib/addons/dragAndDrop/styles';
+
+/* Basic overrides to match app theme */
+.rbc-toolbar {
+  .rbc-btn-group {
+    button {
+      background: transparent;
+      border: 1px solid rgba(16,24,40,0.06);
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: #1a73e8;
+      font-weight: 600;
+      &:hover { background: rgba(26,115,232,0.06); }
+    }
+
+    .rbc-active {
+      background: linear-gradient(90deg, #1a73e8, #ff7043);
+      color: #fff;
+      border-color: transparent;
+    }
+  }
+}
+
+.rbc-event {
+  border: none;
+  padding: 6px 8px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.08);
+}
+
+.rbc-now { background: linear-gradient(180deg, rgba(26,115,232,0.03), transparent); }
+.rbc-date-cell.rbc-now.rbc-current button.rbc-button-link {
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 700;
+}
+
+.rbc-month-view .rbc-date-cell button.rbc-button-link { padding: 8px; border-radius: 8px }

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// react-big-calendar global styles
-import "react-big-calendar/lib/css/react-big-calendar.css";
+// Use SCSS-based react-big-calendar styles so variables can be overridden.
+import "./styles/rbc-custom.scss";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
